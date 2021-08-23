@@ -1,0 +1,309 @@
+{
+	"variables": [],
+	"info": {
+		"name": "workpuls",
+		"_postman_id": "dd535774-caf9-85df-fd4b-467f38a009ea",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"url": "http://localhost:3000/users/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\": \"Test\", \"lastName\":\"test\",\"password\":\"12345\",\"userName\" : \"sdasda\",\"email\": \"testing@gmail.com\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"request": {
+				"url": "http://localhost:3000/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\" : \"admin12345\", \"password\" : \"12345\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Profile",
+			"request": {
+				"url": "http://localhost:3000/users/profile",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWZiMmRmODRjNjg0NTM1OGZiOTBmMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYyOTQ2NzM4NywiZXhwIjoxNjI5NDcwOTg3fQ.ik9RAkziNHvLNhxZa8HfkdbxL5ZRCEh3tMgUHL14CVk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"url": "http://localhost:3000/users/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWZiMmRmODRjNjg0NTM1OGZiOTBmMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYyOTQ2NzM4NywiZXhwIjoxNjI5NDcwOTg3fQ.ik9RAkziNHvLNhxZa8HfkdbxL5ZRCEh3tMgUHL14CVk",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\": \"Admin1\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieving all employees for one node",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/stores/get-all-employees-for-node?storeId=611fad2a3271b84f235a6479",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stores",
+						"get-all-employees-for-node"
+					],
+					"query": [
+						{
+							"key": "storeId",
+							"value": "611fad2a3271b84f235a6479",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWZiMmRmODRjNjg0NTM1OGZiOTBmMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYyOTQ2NzM4NywiZXhwIjoxNjI5NDcwOTg3fQ.ik9RAkziNHvLNhxZa8HfkdbxL5ZRCEh3tMgUHL14CVk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieving all managers for one node",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/stores/get-all-managers-for-node?storeId=611fad2a3271b84f235a6479",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stores",
+						"get-all-managers-for-node"
+					],
+					"query": [
+						{
+							"key": "storeId",
+							"value": "611fad2a3271b84f235a6479",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWZiMmRmODRjNjg0NTM1OGZiOTBmMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYyOTQ2NzM4NywiZXhwIjoxNjI5NDcwOTg3fQ.ik9RAkziNHvLNhxZa8HfkdbxL5ZRCEh3tMgUHL14CVk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieving all employees for one node and all his descendants.",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/stores/get-all-employees-for-node-with-descendants?storeId=611fad2a3271b84f235a64c5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stores",
+						"get-all-employees-for-node-with-descendants"
+					],
+					"query": [
+						{
+							"key": "storeId",
+							"value": "611fad2a3271b84f235a64c5",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWZiMmRmODRjNjg0NTM1OGZiOTBmMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYyOTQ2NzM4NywiZXhwIjoxNjI5NDcwOTg3fQ.ik9RAkziNHvLNhxZa8HfkdbxL5ZRCEh3tMgUHL14CVk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "- Retrieving all managers for one node and all his descendants.",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/stores/get-all-managers-for-node-with-descendants?storeId=611fad2a3271b84f235a6479",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"stores",
+						"get-all-managers-for-node-with-descendants"
+					],
+					"query": [
+						{
+							"key": "storeId",
+							"value": "611fad2a3271b84f235a6479",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMWZiMmRmODRjNjg0NTM1OGZiOTBmMiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTYyOTQ2NzM4NywiZXhwIjoxNjI5NDcwOTg3fQ.ik9RAkziNHvLNhxZa8HfkdbxL5ZRCEh3tMgUHL14CVk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Store",
+			"request": {
+				"url": "http://localhost:3000/stores/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"test\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update store",
+			"request": {
+				"url": "http://localhost:3000/stores/update/611fad2a3271b84f235a6479",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"srbija 1\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete store",
+			"request": {
+				"url": "http://localhost:3000/stores/delete/611fad2a3271b84f235a6479",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get All stores",
+			"request": {
+				"url": "http://localhost:3000/stores/get-all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
